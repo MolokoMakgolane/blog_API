@@ -34,4 +34,4 @@ class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = 'Comment'.objects.all()
     serializer_class = serializers.CommentSerializer
     permission_classes = ['permissions'.IsAuthenticatedOrReadOnly,
-                          'IsauthorOrReadOnly']   
+                          'IsAuthorOrReadOnly']   
